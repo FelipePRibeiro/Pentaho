@@ -24,4 +24,6 @@ Depois tenho realmente a chamada da API, inicializando com um Data Grid contendo
 
 No final dentro do Job, faço 2 avaliações: se o o valor da variável de Controle for igual ao valor da variável que contem quantos Loops tenho que fazer. No exemplo que dei acima seria 64 (65-1). Se i = 64, terminamos o loop, senão precisamos continuar iterando. Depois verifico o resultado da API: foi sucedido? Pode continuar. Não? Espera 10s e tenta novamente de onde parou. :)
 
+Anexei as transformações e os Jobs, retirando toda as partes que conteriam o Body, a URL, as Credenciais, nome de campos e tabelas e etc para manter a confidencialidade.
+
 
