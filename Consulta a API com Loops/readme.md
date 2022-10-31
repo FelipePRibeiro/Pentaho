@@ -20,6 +20,8 @@ Após esse step, o próximo é o controle do Loop, que vai fazer o incremento da
 
 Depois tenho realmente a chamada da API, inicializando com um Data Grid contendo o Body de chamada da API, a Url, credenciais de acessos (encodado em Base64, quis utilizar para aprender, mas poderia ter usado as credenciais que o próprio step do HTPP post oferece), passando depois então as variáveis das transformações anteriores, contendo o OFFSET, a quantidade de registros que vou puxar, e qual a tabela, e tendo que fazer um Split Fields, pois o retorno vem em uma única linha separando todos os campos por Pipe. Aqui também pego o resultado da API e guardo na variável para servir no controle de Loop, e no final guardo o resultado em um CSV sempre dando Apppend (Lembra que apago o arquivo no ínicio do Job? Para garantir que não vou misturar execuções que abortei, estavam erradas com execuções corretas hahaha).
 
-No final, faço 2 avaliações: se o o valor da variável de Controle for igual ao valor da variável que contem quantos Loops tenho que fazer. No exemplo que dei acima seria 64 (65-1). Se i = 64, terminamos o loop, senão precisamos continuar iterando. Depois verifico o resultado da API: foi sucedido? Pode continuar. Não? Espera 10s e tenta novamente de onde parou. :)
+![image](https://user-images.githubusercontent.com/65839541/198913565-96a7ebf7-aa39-42ac-bb12-f7d5b198df0a.png)
+
+No final dentro do Job, faço 2 avaliações: se o o valor da variável de Controle for igual ao valor da variável que contem quantos Loops tenho que fazer. No exemplo que dei acima seria 64 (65-1). Se i = 64, terminamos o loop, senão precisamos continuar iterando. Depois verifico o resultado da API: foi sucedido? Pode continuar. Não? Espera 10s e tenta novamente de onde parou. :)
 
 
