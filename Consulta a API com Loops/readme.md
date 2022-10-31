@@ -32,6 +32,6 @@ O resultado final após toda as iterações, transformações, ficando estrutura
 
 ![image](https://user-images.githubusercontent.com/65839541/198917687-6581e052-7bfe-41a7-9f4f-c00b439245be.png)
 
-Anexei as transformações e os Jobs, retirando toda as partes que conteriam o Body, a URL, as Credenciais, nome de campos e tabelas e etc para manter a confidencialidade.
+Anexei as transformações e os Jobs, retirando toda as partes que conteriam o Body, a URL, as Credenciais, nome de campos e tabelas para manter a confidencialidade.
 
 
