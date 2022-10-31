@@ -24,7 +24,11 @@ Depois tenho realmente a chamada da API, inicializando com um Data Grid contendo
 
 No final dentro do Job, faço 2 avaliações: se o o valor da variável de Controle for igual ao valor da variável que contem quantos Loops tenho que fazer. No exemplo que dei acima seria 64 (65-1). Se i = 64, terminamos o loop, senão precisamos continuar iterando. Depois verifico o resultado da API: foi sucedido? Pode continuar. Não? Espera 10s e tenta novamente de onde parou. :)
 
-O resultado final seria o abaixo:
+Em suma, o resultado da API vem assim:
+
+![image](https://user-images.githubusercontent.com/65839541/198918096-bc74680d-62ff-4f19-9a91-1a4f42aff468.png)
+
+O resultado final após toda as iterações, transformações, ficando estruturado:
 
 ![image](https://user-images.githubusercontent.com/65839541/198917687-6581e052-7bfe-41a7-9f4f-c00b439245be.png)
 
