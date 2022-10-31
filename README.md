@@ -1,2 +1,2 @@
 # Pentaho
-Projetos pessoais no Pentaho
+Resolução de problemas com o Pentaho
