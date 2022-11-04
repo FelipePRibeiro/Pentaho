@@ -22,7 +22,7 @@ Depois tenho realmente a chamada da API, inicializando com um Data Grid contendo
 
 ![image](https://user-images.githubusercontent.com/65839541/198913565-96a7ebf7-aa39-42ac-bb12-f7d5b198df0a.png)
 
-No final dentro do Job, faço 2 avaliações: se o o valor da variável de Controle for igual ao valor da variável que contem quantos Loops tenho que fazer. No exemplo que dei acima seria 64 (65-1). Se i = 64, terminamos o loop, senão precisamos continuar iterando. Depois verifico o resultado da API: foi sucedido? Pode continuar. Não? Espera 10s e tenta novamente de onde parou. :)
+No final dentro do Job, faço 2 avaliações, verificando primeiro o resultado da API. Foi sucedido? Pode continuar. Não? Espera 10s e tenta novamente de onde parou. Caso foi sucedido e não terminou os loops, é feito o incremento da variável e continua esse Loop até puxar todos os registros. :)
 
 Em suma, o resultado da API vem assim:
 
@@ -33,5 +33,3 @@ O resultado final após toda as iterações, transformações, ficando estrutura
 ![image](https://user-images.githubusercontent.com/65839541/198917687-6581e052-7bfe-41a7-9f4f-c00b439245be.png)
 
 Anexei as transformações e os Jobs, retirando toda as partes que conteriam o Body, a URL, as Credenciais, nome de campos e tabelas para manter a confidencialidade.
-
-
