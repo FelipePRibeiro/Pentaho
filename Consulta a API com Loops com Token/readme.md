@@ -26,5 +26,5 @@ Depois desse passo, O Job orquestrador faz a verificação: o Status HTTP é igu
 
 O controle do Loop é simples, apenas fazendo um incremento da variável i e do Offset.
 
-O projeto então se resume a fazer um Do While em uma API com Token de autenticação, garantindo que puxe todos os dados necessários.
+O projeto então se resume a fazer um Do While em uma API com Token de autenticação, garantindo que puxe todos os dados necessários. Comparado com o outro projeto, nesse eu fiz melhor a questão da inicialização das variáveis, deixando centralizado tudo dentro do Job orquestrador, e simplifiquei as etapas de validação do Loop. Foi um projeto bem legal :)
 
