@@ -1,3 +1,5 @@
+[Repositório](https://github.com/FelipePRibeiro/Pentaho/tree/main/Consulta%20a%20API%20com%20Loops)
+
 Tive um desafio no trabalho de fazer uma conexão com API, utilizando o Qlik para fazer o consumo dos dados e inserir em um banco. Consegui fazer, porém quis replicar o mesmo conceito dentro do Pentaho para aprofundar meus conhecimentos nela e mostrar as facilidades/dificuldades que a ferramenta trouxe se comparado ao Qlik. Aqui só me preocupei em fazer o conceito de consultar todos os dados da API utilizando Loops, sem inserção em banco, apenas gerando um arquivo CSV para validação.
 
 O desafio é o seguinte: a API não suporta uma carga "full", ou seja, se ela tem 3 milhões de registros disponíveis, não consigo em apenas um request fazer toda a extração pois ela me retorna erro. Então preciso dividir essa carga em vários requests de N registros que eu vou escolher, e fazer as requisições até terminar o volume de dados. Porém é necessário também fazer uma espécie de Try Catch, pois caso a API me retorne erro por algum motivo, preciso continuar o Loop de onde parei e tentar novamente.
